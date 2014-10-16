@@ -16,31 +16,25 @@
         "symfony/swiftmailer-bundle": "~2.3",
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~3.0",
-        "sensio/framework-extra-bundle": "~3.0",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "sensio/framework-extra-bundle": "~3.0"
     },
     "require-dev": {
-        "sensio/generator-bundle": "~2.3"
+        "sensio/generator-bundle": "~2.3",
+        "phpunit/phpunit": "~4.3"
     },
     "scripts": {
         "post-root-package-install": [
             "SymfonyStandard\\Composer::hookRootPackageInstall"
         ],
         "post-install-cmd": [
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles"
         ],
         "post-update-cmd": [
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles"
         ]
     },
     "config": {
@@ -49,9 +43,6 @@
     "extra": {
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",
-        "incenteev-parameters": {
-            "file": "app/config/parameters.yml"
-        },
         "branch-alias": {
             "dev-master": "2.5-dev"
         }
