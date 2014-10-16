@@ -1,0 +1,14 @@
+imports:
+  - { resource: 'prod.yml' }
+
+framework:
+    test: ~
+    profiler:
+        collect: true
+    session:
+        name: 'MOCKSESSID'
+        storage_id: 'session.storage.mock_file'
+    router:
+        strict_requirements: "%kernel.debug%"
+    validation:
+        cache: ~

@@ -1,0 +1,6 @@
+imports:
+    resource: 'test.yml'
+
+web_profiler_toolbar:
+    resource: '@WebProfilerBundle/Resources/config/routing/wdt.xml'
+    prefix:   '/_wdt'

@@ -1,0 +1,6 @@
+imports:
+    - { resource: 'parameters.yml' }
+    - { resource: 'framework/prod.yml' }
+    - { resource: 'monolog/prod.yml' }
+    - { resource: 'security/prod.yml' }
+    - { resource: 'twig/prod.yml' }

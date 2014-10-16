@@ -1,0 +1,7 @@
+imports:
+    - { resource: 'parameters.yml' }
+    - { resource: 'framework/test.yml' }
+    - { resource: 'monolog/test.yml' }
+    - { resource: 'security/test.yml' }
+    - { resource: 'twig/test.yml' }
+    - { resource: 'web_profiler/test.yml' }

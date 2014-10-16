@@ -1,0 +1,4 @@
+web_profiler:
+    toolbar: false
+    position: 'bottom'
+    intercept_redirects: false

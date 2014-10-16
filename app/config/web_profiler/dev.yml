@@ -1,0 +1,5 @@
+imports:
+    - { resource: 'test.yml' }
+
+web_profiler:
+    toolbar: true

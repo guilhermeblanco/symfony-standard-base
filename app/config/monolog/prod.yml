@@ -1,0 +1,12 @@
+monolog:
+    handlers:
+        main:
+            type: 'fingers_crossed'
+            action_level: 'critical'
+            handler: 'nested'
+        nested:
+            type: 'stream'
+            path: '%kernel.logs_dir%/%kernel.environment%.log'
+            level: 'warning'
+        console:
+            type: 'console'

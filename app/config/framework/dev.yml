@@ -1,0 +1,10 @@
+imports:
+    - { resource: 'prod.yml' }
+
+framework:
+    profiler:
+        collect: true
+    router:
+        strict_requirements: "%kernel.debug%"
+    validation:
+        cache: ~

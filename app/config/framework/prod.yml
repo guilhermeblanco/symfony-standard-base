@@ -1,0 +1,42 @@
+framework:
+    annotations:
+        cache: 'file'
+        file_cache_dir: "%kernel.cache_dir%/annotations"
+        debug: "%kernel.debug%"
+    csrf_protection:
+        enabled: false
+        field_name: '_token'
+    default_locale: "%locale%"
+    esi:
+        enabled: false
+    form:
+        enabled: false
+    fragments:
+        enabled: false
+        path: '/_fragments'
+    http_method_override: true
+    profiler:
+        collect: false
+        only_exceptions: false
+        only_master_requests: false
+    router:
+        resource: "%kernel.root_dir%/config/routing/%kernel.environment%.yml"
+        strict_requirements: null
+    secret: "%secret%"
+    session:
+        name: 'auth'
+        storage_id: 'session.storage.native'
+        handler_id: ~
+    templating:
+        engines:
+            - 'twig'
+    translator:
+        enabled: false
+        fallback: "%locale%"
+    trusted_hosts: ~
+    trusted_proxies: ~
+    validation:
+        enabled: false
+        enable_annotations: false
+        cache: 'apc'
+        translation_domain: 'validators'

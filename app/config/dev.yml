@@ -1,0 +1,7 @@
+imports:
+    - { resource: 'parameters.yml' }
+    - { resource: 'framework/dev.yml' }
+    - { resource: 'monolog/dev.yml' }
+    - { resource: 'security/dev.yml' }
+    - { resource: 'twig/dev.yml' }
+    - { resource: 'web_profiler/dev.yml' }

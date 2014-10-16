@@ -1,0 +1,5 @@
+twig:
+    debug: "%kernel.debug%"
+    cache: "%kernel.cache_dir%/twig"
+    charset: "%kernel.charset%"
+    strict_variables: "%kernel.debug%"
